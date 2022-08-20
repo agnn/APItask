@@ -14,44 +14,42 @@ cursor.execute(query)
 def insert_values():
     'function to record in to database'
     lg.info("function call successful")
+    record = []
     if (request.method=='POST'):
-        a = request.json['value0']
-        b = request.json['value1']
-        c = request.json['value2']
-        d = request.json['value3']
-        f = request.json['value4']
-        lg.info(f"record inserted {a},{b},{c},{d},{f})")
+
+        for i in range(0, 5):
+            record.append(request.json[f'value{i}'])
+        lg.info(f"record",record)
         try:
-            query = f"INSERT INTO dbAPItask.details values('{a}','{b}','{c}','{d}','{f}')"
-            lg.info(f"record entered successfully '{a}','{b}','{c}','{d}','{f}'")
+            query = f"INSERT INTO dbAPItask.details values('{record[0]}','{record[1]}','{record[2]}','{record[3]}','{record[4]}')"
+            lg.info(f"record entered successfully")
             cursor.execute(query)
             mydb.commit()
 
         except Exception as e:
               lg.error(e)
-    return jsonify(str(f"record inserted successfully {a},{b},{c},{d},{f}"))
+    return jsonify(str(f"record inserted successfully {record}"))
 
 @app.route('/update-sql',methods=['GET' , 'POST'])
 def update_values():
     'to update existing values'
-
+    record = []
     lg.info("function call successful")
     if (request.method=='POST'):
-        a = request.json['value0']
-        b = request.json['value1']
-        c = request.json['value2']
-        d = request.json['value3']
-        f = request.json['value4']
-        lg.info(a,b,c,d,f)
+
+        for i in range(0, 5):
+            record.append(request.json[f'value{i}'])
+        lg.info(f"record {record}")
         try:
-            query = f"UPDATE dbAPItask.details SET student_name = '{b}' ,student_email_id = '{c}' ,student_DOB = '{d}' ,student_gender= '{f}' WHERE student_id = {a}"
-            lg.info(f"record updated successfully for {a}, with, {b},{c},{d},{f}")
+            #this query will execute with assumption that all keys passed are in order as actual table.
+            query = f"UPDATE dbAPItask.details SET student_name = '{record[1]}' ,student_email_id = '{record[2]}' ,student_DOB = '{record[3]}' ,student_gender= '{record[4]}' WHERE student_id = {record[0]}"
             cursor.execute(query)
             mydb.commit()
+            lg.info(f"record updated successfully for {record[0]}, with, {record[1]},{record[2]},{record[3]},{record[4]}")
 
         except Exception as e:
               lg.error(e)
-    return jsonify(str(f"record updated successfully for,{a},with,{b},{c},{d},{f}"))
+    return jsonify(str(f"record updated successfully for {record[0]}, with, {record[1]},{record[2]},{record[3]},{record[4]}"))
 
 
 @app.route('/del-sql',methods=['GET','Post'])
@@ -81,9 +79,9 @@ def view_values():
         try :
             query = f"SELECT * from dbAPItask.details WHERE student_id ={a}"
             cursor.execute(query)
-            r = cursor.fetchall()
-            lg.info(f"record -  {r}")
-            return jsonify(r)
+            record = cursor.fetchall()
+            lg.info(f"record -  {record}")
+            return jsonify(record)
         except Exception as e:
             lg.error(e)
 
