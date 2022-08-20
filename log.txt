@@ -1,0 +1,124 @@
+[2022-08-20 20:23:27,061 - INFO - "Module" sql-my] : function call successful
+[2022-08-20 20:23:27,064 - INFO - "Module" sql-my] : record updated successfully for 1004, with, zing,zing.009@gmail.com,08/01/1992,male
+[2022-08-20 20:23:27,065 - INFO - "Module" _internal] : 127.0.0.1 - - [20/Aug/2022 20:23:27] "POST /update HTTP/1.1" 200 -
+[2022-08-20 20:26:01,984 - INFO - "Module" sql-my] : function call successful
+[2022-08-20 20:26:01,985 - INFO - "Module" sql-my] : record entered successfully '1010','Roy','roy@gmail.com','18/01/1992','male'
+[2022-08-20 20:26:02,001 - INFO - "Module" _internal] : 127.0.0.1 - - [20/Aug/2022 20:26:02] "POST /insert HTTP/1.1" 200 -
+[2022-08-20 21:12:14,993 - INFO - "Function" <module>] : info
+[2022-08-20 21:13:23,801 - INFO - "Function" <module>] : info
+[2022-08-20 21:13:24,539 - INFO - "Function" _log] : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2022-08-20 21:13:24,539 - INFO - "Function" _log] : [33mPress CTRL+C to quit[0m
+[2022-08-20 21:13:51,033 - INFO - "Function" insert_values_mdb] : function call successful
+[2022-08-20 21:13:51,033 - INFO - "Function" insert_values_mdb] : record inserted 1010,Roy,roy@gmail.com,18/01/1992,male
+[2022-08-20 21:13:51,034 - ERROR - "Function" insert_values_mdb] : local variable 'e' referenced before assignment
+[2022-08-20 21:13:51,034 - ERROR - "Function" log_exception] : Exception on /insert-mongo [POST]
+Traceback (most recent call last):
+  File "C:\Users\agnik\anaconda3\envs\SQL_MDB_API\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\agnik\anaconda3\envs\SQL_MDB_API\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\agnik\anaconda3\envs\SQL_MDB_API\lib\site-packages\flask\app.py", line 1842, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\agnik\anaconda3\envs\SQL_MDB_API\lib\site-packages\flask\app.py", line 2135, in make_response
+    f"The view function for {request.endpoint!r} did not"
+TypeError: The view function for 'insert_values_mdb' did not return a valid response. The function either returned None or ended without a return statement.
+[2022-08-20 21:13:51,037 - INFO - "Function" _log] : 127.0.0.1 - - [20/Aug/2022 21:13:51] "[35m[1mPOST /insert-mongo HTTP/1.1[0m" 500 -
+[2022-08-20 21:14:41,634 - INFO - "Function" <module>] : info
+[2022-08-20 21:14:42,002 - INFO - "Function" _log] : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2022-08-20 21:14:42,002 - INFO - "Function" _log] : [33mPress CTRL+C to quit[0m
+[2022-08-20 21:14:53,200 - INFO - "Function" insert_values_mdb] : function call successful
+[2022-08-20 21:14:53,200 - INFO - "Function" insert_values_mdb] : record inserted 1010,Roy,roy@gmail.com,18/01/1992,male
+[2022-08-20 21:14:53,200 - ERROR - "Function" insert_values_mdb] : document must be an instance of dict, bson.son.SON, bson.raw_bson.RawBSONDocument, or a type that inherits from collections.MutableMapping
+[2022-08-20 21:14:53,200 - ERROR - "Function" log_exception] : Exception on /insert-mongo [POST]
+Traceback (most recent call last):
+  File "C:\Users\agnik\anaconda3\envs\SQL_MDB_API\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\agnik\anaconda3\envs\SQL_MDB_API\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\agnik\anaconda3\envs\SQL_MDB_API\lib\site-packages\flask\app.py", line 1842, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\agnik\anaconda3\envs\SQL_MDB_API\lib\site-packages\flask\app.py", line 2135, in make_response
+    f"The view function for {request.endpoint!r} did not"
+TypeError: The view function for 'insert_values_mdb' did not return a valid response. The function either returned None or ended without a return statement.
+[2022-08-20 21:14:53,200 - INFO - "Function" _log] : 127.0.0.1 - - [20/Aug/2022 21:14:53] "[35m[1mPOST /insert-mongo HTTP/1.1[0m" 500 -
+[2022-08-20 21:16:29,840 - INFO - "Function" <module>] : info
+[2022-08-20 21:16:30,233 - INFO - "Function" _log] : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2022-08-20 21:16:30,233 - INFO - "Function" _log] : [33mPress CTRL+C to quit[0m
+[2022-08-20 21:16:45,682 - INFO - "Function" insert_values_mdb] : function call successful
+[2022-08-20 21:16:45,682 - INFO - "Function" insert_values_mdb] : record inserted 1010,Roy,roy@gmail.com,18/01/1992,male
+[2022-08-20 21:16:45,682 - ERROR - "Function" insert_values_mdb] : document must be an instance of dict, bson.son.SON, bson.raw_bson.RawBSONDocument, or a type that inherits from collections.MutableMapping
+[2022-08-20 21:16:45,683 - INFO - "Function" _log] : 127.0.0.1 - - [20/Aug/2022 21:16:45] "POST /insert-mongo HTTP/1.1" 200 -
+[2022-08-20 21:18:23,827 - INFO - "Function" <module>] : info
+[2022-08-20 21:18:24,199 - INFO - "Function" _log] : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2022-08-20 21:18:24,199 - INFO - "Function" _log] : [33mPress CTRL+C to quit[0m
+[2022-08-20 21:18:25,632 - INFO - "Function" insert_values_mdb] : function call successful
+[2022-08-20 21:18:25,632 - INFO - "Function" insert_values_mdb] : record is 1010,Roy,roy@gmail.com,18/01/1992,male
+[2022-08-20 21:18:26,017 - INFO - "Function" insert_values_mdb] : record updated {'student_id': 1010, 'student_name': 'Roy', 'student_email': 'roy@gmail.com', 'student_DOB': '18/01/1992', 'student_gender': 'male', '_id': ObjectId('6301024923322eff2c6503d0')}
+[2022-08-20 21:18:26,018 - INFO - "Function" _log] : 127.0.0.1 - - [20/Aug/2022 21:18:26] "POST /insert-mongo HTTP/1.1" 200 -
+[2022-08-20 21:29:45,738 - INFO - "Function" <module>] : info
+[2022-08-20 21:29:46,209 - INFO - "Function" _log] : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2022-08-20 21:29:46,209 - INFO - "Function" _log] : [33mPress CTRL+C to quit[0m
+[2022-08-20 21:29:52,244 - INFO - "Function" update_values_mdb] : function call successful
+[2022-08-20 21:29:52,589 - INFO - "Function" _log] : 127.0.0.1 - - [20/Aug/2022 21:29:52] "POST /update-mdb HTTP/1.1" 200 -
+[2022-08-20 21:36:19,029 - INFO - "Function" <module>] : info
+[2022-08-20 21:36:19,408 - INFO - "Function" _log] : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2022-08-20 21:36:19,408 - INFO - "Function" _log] : [33mPress CTRL+C to quit[0m
+[2022-08-20 21:36:29,662 - INFO - "Function" insert_values_mdb] : function call successful
+[2022-08-20 21:36:29,663 - INFO - "Function" insert_values_mdb] : record is 1001,Roy,roy@gmail.com,18/01/1992,male
+[2022-08-20 21:36:29,977 - INFO - "Function" insert_values_mdb] : record updated {'student_id': 1001, 'student_name': 'Roy', 'student_email': 'roy@gmail.com', 'student_DOB': '18/01/1992', 'student_gender': 'male', '_id': ObjectId('63010685aa20f133dbda47ca')}
+[2022-08-20 21:36:29,978 - INFO - "Function" _log] : 127.0.0.1 - - [20/Aug/2022 21:36:29] "POST /insert-mongo HTTP/1.1" 200 -
+[2022-08-20 21:36:33,262 - INFO - "Function" insert_values_mdb] : function call successful
+[2022-08-20 21:36:33,262 - INFO - "Function" insert_values_mdb] : record is 1002,Roy,roy@gmail.com,18/01/1992,male
+[2022-08-20 21:36:33,306 - INFO - "Function" insert_values_mdb] : record updated {'student_id': 1002, 'student_name': 'Roy', 'student_email': 'roy@gmail.com', 'student_DOB': '18/01/1992', 'student_gender': 'male', '_id': ObjectId('63010689aa20f133dbda47cb')}
+[2022-08-20 21:36:33,306 - INFO - "Function" _log] : 127.0.0.1 - - [20/Aug/2022 21:36:33] "POST /insert-mongo HTTP/1.1" 200 -
+[2022-08-20 21:36:36,663 - INFO - "Function" insert_values_mdb] : function call successful
+[2022-08-20 21:36:36,663 - INFO - "Function" insert_values_mdb] : record is 1003,Roy,roy@gmail.com,18/01/1992,male
+[2022-08-20 21:36:36,739 - INFO - "Function" insert_values_mdb] : record updated {'student_id': 1003, 'student_name': 'Roy', 'student_email': 'roy@gmail.com', 'student_DOB': '18/01/1992', 'student_gender': 'male', '_id': ObjectId('6301068caa20f133dbda47cc')}
+[2022-08-20 21:36:36,740 - INFO - "Function" _log] : 127.0.0.1 - - [20/Aug/2022 21:36:36] "POST /insert-mongo HTTP/1.1" 200 -
+[2022-08-20 21:37:07,722 - INFO - "Function" insert_values_mdb] : function call successful
+[2022-08-20 21:37:07,723 - INFO - "Function" insert_values_mdb] : record is 1004,Roy,roy@gmail.com,18/01/1992,male
+[2022-08-20 21:37:07,773 - INFO - "Function" insert_values_mdb] : record updated {'student_id': 1004, 'student_name': 'Roy', 'student_email': 'roy@gmail.com', 'student_DOB': '18/01/1992', 'student_gender': 'male', '_id': ObjectId('630106abaa20f133dbda47cd')}
+[2022-08-20 21:37:07,775 - INFO - "Function" _log] : 127.0.0.1 - - [20/Aug/2022 21:37:07] "POST /insert-mongo HTTP/1.1" 200 -
+[2022-08-20 21:37:11,912 - INFO - "Function" insert_values_mdb] : function call successful
+[2022-08-20 21:37:11,912 - INFO - "Function" insert_values_mdb] : record is 1005,Roy,roy@gmail.com,18/01/1992,male
+[2022-08-20 21:37:11,956 - INFO - "Function" insert_values_mdb] : record updated {'student_id': 1005, 'student_name': 'Roy', 'student_email': 'roy@gmail.com', 'student_DOB': '18/01/1992', 'student_gender': 'male', '_id': ObjectId('630106afaa20f133dbda47ce')}
+[2022-08-20 21:37:11,956 - INFO - "Function" _log] : 127.0.0.1 - - [20/Aug/2022 21:37:11] "POST /insert-mongo HTTP/1.1" 200 -
+[2022-08-20 21:39:13,751 - INFO - "Function" <module>] : info
+[2022-08-20 21:39:14,174 - INFO - "Function" _log] : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2022-08-20 21:39:14,174 - INFO - "Function" _log] : [33mPress CTRL+C to quit[0m
+[2022-08-20 21:39:36,989 - INFO - "Function" view_values_mdb] : function call successful
+[2022-08-20 21:39:36,989 - INFO - "Function" view_values_mdb] : record with id : 1001
+[2022-08-20 21:39:36,989 - INFO - "Function" view_values_mdb] : <pymongo.cursor.Cursor object at 0x00000235676723C8>
+[2022-08-20 21:39:36,989 - INFO - "Function" _log] : 127.0.0.1 - - [20/Aug/2022 21:39:36] "POST /view-mdb HTTP/1.1" 200 -
+[2022-08-20 21:42:25,888 - INFO - "Function" <module>] : info
+[2022-08-20 21:42:26,270 - INFO - "Function" _log] : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2022-08-20 21:42:26,270 - INFO - "Function" _log] : [33mPress CTRL+C to quit[0m
+[2022-08-20 21:42:28,799 - INFO - "Function" view_values_mdb] : function call successful
+[2022-08-20 21:42:28,799 - INFO - "Function" view_values_mdb] : record with id : 1001
+[2022-08-20 21:42:28,799 - INFO - "Function" view_values_mdb] : <pymongo.cursor.Cursor object at 0x0000019F21F431C8>
+[2022-08-20 21:42:29,100 - INFO - "Function" view_values_mdb] : {'_id': ObjectId('63010685aa20f133dbda47ca'), 'student_id': 1001, 'student_name': 'Roy', 'student_email': 'roy@gmail.com', 'student_DOB': '18/01/1992', 'student_gender': 'male'}
+[2022-08-20 21:42:29,100 - INFO - "Function" _log] : 127.0.0.1 - - [20/Aug/2022 21:42:29] "POST /view-mdb HTTP/1.1" 200 -
+[2022-08-20 21:43:07,810 - INFO - "Function" <module>] : info
+[2022-08-20 21:43:08,169 - INFO - "Function" _log] : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2022-08-20 21:43:08,169 - INFO - "Function" _log] : [33mPress CTRL+C to quit[0m
+[2022-08-20 21:43:13,228 - INFO - "Function" view_values_mdb] : function call successful
+[2022-08-20 21:43:13,228 - INFO - "Function" view_values_mdb] : record with id : 1001
+[2022-08-20 21:43:13,469 - INFO - "Function" view_values_mdb] : {'_id': ObjectId('63010685aa20f133dbda47ca'), 'student_id': 1001, 'student_name': 'Roy', 'student_email': 'roy@gmail.com', 'student_DOB': '18/01/1992', 'student_gender': 'male'}
+[2022-08-20 21:43:13,469 - INFO - "Function" _log] : 127.0.0.1 - - [20/Aug/2022 21:43:13] "POST /view-mdb HTTP/1.1" 200 -
+[2022-08-20 22:28:47,409 - INFO - "Function" <module>] : info
+[2022-08-20 22:28:47,801 - INFO - "Function" _log] : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2022-08-20 22:28:47,801 - INFO - "Function" _log] : [33mPress CTRL+C to quit[0m
+[2022-08-20 22:29:00,036 - INFO - "Function" insert_values_mdb] : function call successful
+[2022-08-20 22:29:00,036 - INFO - "Function" insert_values_mdb] : record is 1099,Roy,roy@gmail.com,18/01/1992,male
+[2022-08-20 22:29:00,353 - INFO - "Function" insert_values_mdb] : record updated {'student_id': 1099, 'student_name': 'Roy', 'student_email': 'roy@gmail.com', 'student_DOB': '18/01/1992', 'student_gender': 'male', '_id': ObjectId('630112d4a3ef87d86a262748')}
+[2022-08-20 22:29:00,354 - INFO - "Function" _log] : 127.0.0.1 - - [20/Aug/2022 22:29:00] "POST /insert-mongo HTTP/1.1" 200 -
